@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOVO USUARIO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+        <form action="/criarusuario" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="login">NOVO USUARIO</label>
+            <input type="text" id="login" name="login" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="senha">SENHA</label>
+            <input type="text" id="senha" name="senha" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+        </fieldset>
+      </form>
+    </div>
+</body>
+</html>

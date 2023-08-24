@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrador de ANOTAÇÕES</title>
+      <link rel="stylesheet" href="../static/bootstrap.css">
+
+  </head>
+  <body>
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul id="messages" class="list-unstyled">
+                        {% for message in messages %}
+                            <li class="alert alert-success">{{ message }}</li>
+                        {% endfor %}
+                        </ul>
+            {% endif %}
+        {% endwith %}
+
+        <div class="page-header">
+            <h1>{{titulo}}</h1>
+            <a href="/" class="btn btn-primary">Página Inicial</a>
+            <a href="/novo" class="btn btn-success">Nova Anotação</a>
+            <button class="btn btn-primary" onclick="printPage()">Imprimir Página</button>
+            <a href="/logout" class="btn btn-primary">LOGOUT</a>
+
+
+        </div>
+        <table class="table table-striped table-responsive table-bordered">
+            <thead class="thead-default">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Equipamento</th>
+                    <th>MOTIVO CONTATO</th>
+                    <th>Anotações</th>
+                    <th>DATA</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for onu in onus %}
+                <tr>
+                    <td>{{ onu.cliente }}</td>
+                    <td>{{ onu.equipamento }}</td>
+                    <td>{{ onu.motivo }}</td>
+                    <td>{{ onu.anotacoes }}</td>
+                    <td>{{ onu.data}}</td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+      <script>
+            function printPage() {
+                window.print();
+            }
+        </script>
+  </body>
+</html>
