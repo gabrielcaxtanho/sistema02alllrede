@@ -8,8 +8,11 @@ Armazenamento de Procedimentos Diários: A aplicação permite que os funcionár
 🟢 Controle de Acesso: A segurança é uma prioridade. A aplicação oferece autenticação de usuário, garantindo que apenas funcionários autorizados possam acessar e modificar os procedimentos diários. Além disso, diferentes níveis de acesso podem ser implementados para garantir a privacidade das informações sensíveis.
 
 🟢 Interface Intuitiva: A interface foi projetada para ser amigável e de fácil utilização. Os funcionários podem inserir rapidamente os detalhes dos procedimentos diários, enquanto os visitantes do portfolio podem navegar pelas aplicações forma intuitiva.
-
+<BR>
 Aplicação:
+<BR>
 LOGIN> LOGIN
+<BR>
 SENHA> SENHA
+<BR>
 https://registroonugc01.onrender.com/login
