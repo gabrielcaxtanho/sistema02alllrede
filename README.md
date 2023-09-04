@@ -10,4 +10,6 @@ Armazenamento de Procedimentos Diários: A aplicação permite que os funcionár
 🟢 Interface Intuitiva: A interface foi projetada para ser amigável e de fácil utilização. Os funcionários podem inserir rapidamente os detalhes dos procedimentos diários, enquanto os visitantes do portfolio podem navegar pelas aplicações forma intuitiva.
 
 Aplicação:
+LOGIN> LOGIN
+SENHA> SENHA
 https://registroonugc01.onrender.com/login
